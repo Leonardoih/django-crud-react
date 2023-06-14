@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'coreapi',
     'tasks'
-    
-    
+
+
 ]
 
 MIDDLEWARE = [
@@ -130,7 +130,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # cors authorization
-CORS_ALLOWED_ORIGINS = []
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173'
+]
 
 # rest framework settings auto schema
 REST_FRAMEWORK = {
